@@ -1,5 +1,6 @@
 {
-  "name": "keeper-part-3-starting",
+  "homepage": "http://krishcodz.github.io/Notes-Keeper",
+  "name": "notes-keeper",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -14,11 +15,14 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "typescript": "3.3.3",
-    "@babel/plugin-proposal-private-property-in-object": "7.21.10"
+    "@babel/plugin-proposal-private-property-in-object": "7.21.10",
+    "gh-pages": "^5.0.0",
+    "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "predeploy": "npm run buid",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
